@@ -49,6 +49,7 @@ const customerRoutes = require('./routes/customer.routes');
 const dashboardRoutes = require('./routes/dashboard.routes');
 const expenseRoutes = require('./routes/expense.routes');
 const incomeRoutes = require('./routes/income.routes');
+const stockRoutes = require('./routes/stock.routes');
 
 // Use Routes
 app.use('/api/auth', authRoutes);
@@ -60,6 +61,7 @@ app.use('/api/customers', customerRoutes);
 app.use('/api/dashboard', dashboardRoutes);
 app.use('/api/expenses', expenseRoutes);
 app.use('/api/incomes', incomeRoutes);
+app.use('/api/stock', stockRoutes);
 
 // Health check route
 app.get('/api/health', (req, res) => {
